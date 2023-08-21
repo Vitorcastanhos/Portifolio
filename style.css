@@ -31,6 +31,7 @@ body {
   background-size: cover; */
 
 	background: var(--bg-url) no-repeat top center/cover;
+	height: 100vh;
 }
 
 body * {
@@ -39,7 +40,8 @@ body * {
 }
 
 .container {
-	width: 360px;
+	width: 100%;
+	max-width: 588px;
 	margin: 56px auto 0;
 
 	padding: 0 24px;
@@ -65,7 +67,6 @@ body * {
 	width: 64px;
 
 	margin: 4px auto;
-
 }
 
 #switch button {
@@ -84,7 +85,7 @@ body * {
 	cursor: pointer;
 }
 
-.light #switch button{
+.light #switch button {
 	right: 0;
 	left: initial;
 }
@@ -169,4 +170,14 @@ footer {
 
 footer a {
 	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	:root {
+		--bg-url: url(./assets/bg-desktop.jpg);
+	}
+
+	.light {
+		--bg-url: url(./assets/bg-desktop-light.jpg);
+	}
 }
