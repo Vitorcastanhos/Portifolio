@@ -10,9 +10,4 @@ function toggle() {
 	} else {
 		img.setAttribute("src", "./assets/avatar.png");
 	}
-	// if(html.classList.contains('light')) {
-	//   html.classList.remove('light')
-	// } else {
-	//   html.classList.add('light')
-	// }
 }
