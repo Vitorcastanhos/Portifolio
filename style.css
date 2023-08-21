@@ -131,7 +131,7 @@ ul li a {
 }
 
 ul li a:hover {
-	background: var(--surface-color-hover);
+	background: var(--hightlight-color);
 	border: 1.5px solid var(--text-color);
 }
 
